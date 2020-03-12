@@ -1,0 +1,237 @@
+/* Foundation v3.0 http://foundation.zurb.com */
+/* Artfully masterminded by ZURB  */
+
+/* --------------------------------------------------
+Working with ZURB 
+
+Zurb is a CSS framework for rapid prototyping based around a 12-column, percentage-based grid. 
+
+There are columns to structure the page.  
+Rows create a max-width and contain the columns;
+e.g. 
+
+
+<!-- Foundation 3 Structure -->
+<div class="row">
+  <div class="six columns">
+  <div class="six columns">
+</div>
+
+There's a lot more to it than this, check out http://foundation.zurb.com/docs/ for info. 
+
+*/
+
+
+
+/* --------------------------------------------------
+Default colour scheme reference
+
+-----------------------------------------------------
+Main link colour: #2ba6cb;
+Text colour: #222222
+background: white
+
+/* -----------------------------------------
+global classes
+----------------------------------------- */
+h1#site-title a{
+color: #2ba6cb;
+}
+
+.page {
+	padding-left: 0.9375em;
+}
+
+#primary-nav {
+	
+}
+
+#primary-nav a:hover {
+	color: #2ba6cb;
+}
+
+/* default foundation list style is outside */
+.items ul, .collections ul, .search ul  {
+	list-style-position:inside;
+}
+
+
+	/* Sub Navs http://www.zurb.com/article/292/how-to-create-simple-and-effective-sub-na ---------------------- */
+	ul#sort-links-list { display: block; width: auto; overflow: hidden; margin: -4px 0 18px; margin-right: 0; margin-left: -9px; padding-top: 4px; }
+	ul#sort-links-list li { float: left; display: inline; margin-left: 9px; margin-bottom: 10px; }
+	ul#sort-links-list a { text-decoration: none; -webkit-border-radius: 1000px; -moz-border-radius: 1000px; -ms-border-radius: 1000px; -o-border-radius: 1000px; border-radius: 1000px; }
+	#sort-links-list li.sorting a { font-weight: bold; background: #2ba6cb; color: #fff; padding: 3px 9px; cursor: default; }
+	
+.sort-label {
+	display: inline;
+	    float: left;
+	    font-size: 0.875em;
+	    font-weight: normal;
+	    margin-bottom: 0.625em;
+	    margin-left: 0.5625em;
+	margin-top: 0.7em;
+	
+}
+
+.items-nav  {
+	display:none;
+}
+/* -----------------------------------------
+Featured collections showcase using Orbit
+----------------------------------------- */
+
+div#featured { background: url(../images/spinner.gif) center center #f4f4f4; height: 300px; }
+div#featured img { display: none; }
+
+div#featured.orbit { background: none; }
+div#featured.orbit img { display: block; }
+
+/* -----------------------------------------
+Browsing styles
+----------------------------------------- */
+
+body.items h1, body.collections h1 {
+	font-size: 2.3125em;
+}
+
+
+.hentry h2 {
+	font-size: 1.375em; }
+}
+
+
+
+
+
+
+/* -----------------------------------------
+Forms
+----------------------------------------- */
+
+#search-container {
+float: right;
+border: none;
+
+
+}
+
+#search-form input{
+overflow: hidden; 
+width:70%;
+display: inline-block;
+}
+
+
+	select {
+	border: 1px solid;
+	white-space: pre;
+	color: black;
+	cursor: default;
+	}
+
+
+#search-form input[type="submit"], #submit_search_advanced {
+width: 27%;
+margin: 0 auto;
+}
+
+#search-form {
+margin: 0;
+background-color: #111;
+}
+
+
+.top-bar-section ul {
+	background: inherit;
+}
+
+#advanced-search-form select {
+	margin-top: 1em;
+	display: block;
+    position: relative;
+    top: 0;
+    height: 2.3125em;
+    margin-bottom: 1.25em;
+    margin-top: 0px;
+    padding: 0px;
+    width: 100%;
+    background: white;
+    background: -moz-linear-gradient(top, white 0%, #f3f3f3 100%);
+    background: -webkit-linear-gradient(top, white 0%, #f3f3f3 100%);
+    background: linear-gradient(to bottom, white 0%, #f3f3f3 100%);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: 0.875em;
+    vertical-align: top;
+
+}
+
+
+/* All tags are created equal - moving away from the traditional, weighted tag cloud --------- */
+
+
+.hTagcloud {
+padding: 20px 0;}
+
+.tagcloud p {
+	padding: 10px;
+}
+
+.hTagcloud ul {
+	width: 50%;
+	overflow: hidden;
+
+	margin: 0 0 1em;
+	
+}
+
+.hTagcloud li {
+	display: inline-block;
+	float: left;
+
+	text-align: center;
+	margin: 0 10px 10px 0;
+	padding: 3px 8px;
+background-color: #555;
+border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+.hTagcloud a:hover {
+color: white;
+
+}
+
+
+
+.item-meta {
+	margin-bottom: 0.5em;
+}
+
+
+
+/* -----------------------------------------
+Footer
+----------------------------------------- */
+
+#footer {
+	border-top: 1px solid #dddddd;
+	background: #1399bd;
+	width: 100%;
+	color: white;
+}
+
+
+ul.link-list {
+	display: inline-block;
+	
+}
+
+ul.link-list a, #footer h4 {
+	color: white;
+}
+
+ul.link-list a:hover {
+	color: #f8f8f8;
+}
