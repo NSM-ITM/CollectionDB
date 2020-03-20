@@ -41,6 +41,7 @@ echo item_search_filters();
                 $browseHeadings[__('Creator')] = 'Dublin Core,Creator';
                 $browseHeadings[__('Type')] = null;
                 $browseHeadings[__('Date Added')] = 'added';
+                $browseHeadings[__('Identifier')] = 'Dublin Core,Identifier';
                 echo browse_sort_links($browseHeadings, array('link_tag' => 'th scope="col"', 'list_tag' => '')); 
                 ?>
             </tr>
@@ -106,6 +107,7 @@ echo item_search_filters();
                     ?>
                 </td>
                 <td><?php echo format_date(metadata('item', 'added')); ?></td>
+                <td><?php echo metadata('item', array('Dublin Core', 'Identifier')); ?></td>
             </tr>
             <?php endforeach; ?>
         </tbody>
